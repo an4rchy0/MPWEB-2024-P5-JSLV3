@@ -1,0 +1,9 @@
+var name = document.getElementById("name").value;
+var responseText = document.getElementById("textt");
+if (name === "") {
+    responseText.style.color = "red";
+    responseText.innerHTML = "Tidak boleh kosong";
+} else {
+    responseText.style.color = "green";
+    responseText.innerHTML = "Hello " + name;
+}
